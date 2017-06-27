@@ -14,11 +14,11 @@ import Register from './Register';
 const title = 'New User Registration';
 
 function action() {
-  return {
-    chunks: ['register'],
-    title,
-    component: <Layout><Register title={title} /></Layout>,
-  };
+	return {
+		chunks: ['register'],
+		title,
+		component: <Layout><Register title={title} /></Layout>,
+	};
 }
 
 export default action;
