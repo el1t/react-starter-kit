@@ -95,7 +95,7 @@ const config = {
 
 			// Handle internal/project styles (from src folder)
 			{
-				test: stylesRegExp,
+				test: /\.scss/,
 				include: path.resolve(__dirname, '../src'),
 				use: [
 					{
@@ -156,10 +156,10 @@ const config = {
 			// Compile Sass to CSS
 			// https://github.com/webpack-contrib/sass-loader
 			// Install dependencies before uncommenting: yarn add --dev sass-loader node-sass
-			// {
-			//   test: /\.scss$/,
-			//   loader: 'sass-loader',
-			// },
+			{
+			  test: /\.scss$/,
+			  loader: 'sass-loader',
+			},
 
 			// Inline small images into CSS as Base64 encoded DataUrl string
 			{

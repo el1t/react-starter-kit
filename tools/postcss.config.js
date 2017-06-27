@@ -9,7 +9,15 @@
 
 /* eslint-disable global-require */
 
+// Only use ACTUAL post-processing plugins
 module.exports = () => ({
+	plugins: [
+		require('autoprefixer')(),
+	],
+});
+
+// module.exports = () => ({
+(() => ({
 	// The list of plugins for PostCSS
 	// https://github.com/postcss/postcss
 	plugins: [
@@ -59,4 +67,4 @@ module.exports = () => ({
 		// https://github.com/postcss/autoprefixer
 		require('autoprefixer')(/* package.json/browserslist */),
 	],
-});
+}))();

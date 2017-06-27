@@ -20,7 +20,7 @@ import PrettyError from 'pretty-error';
 import App from './components/App';
 import Html from './components/Html';
 import { ErrorPageWithoutStyle } from './routes/error/ErrorPage';
-import errorPageStyle from './routes/error/ErrorPage.css';
+import errorPageStyle from './routes/error/ErrorPage.scss';
 import createFetch from './createFetch';
 import passport from './passport';
 import router from './router';
